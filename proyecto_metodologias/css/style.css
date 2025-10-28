@@ -1,0 +1,82 @@
+/*
+Hola amigos, este es un comentario de CSS
+Fijense que los comentarios no están limitados a una sola línea eh
+*/
+
+/*
+Aquí les dejo la paleta de colores:
+#898AC4
+#A2AADB
+#C0C9EE
+#FFF2E0
+
+Están en orden del más oscuro al más claro
+*/
+
+body {
+    overflow: hidden; /*Elimina/oculta el "Scroll" lateral*/
+    background-color: #A2AADB;
+    margin: 0; /*Por si acaso hay algún margen por defecto*/
+}
+
+header {
+    background-color: #898AC4;
+}
+
+.ht {
+    list-style: none;
+    display: flex;
+    align-items: center; /*Centra el contenido en el eje Y*/
+    justify-content: center; /*Centra el contenido en eje X*/
+    margin: 0; /*Elimina un margen que está establecido por defecto*/
+    gap: 20px;
+    /*
+    transform: translateX(-40px);
+
+    No logro decidir si esto queda bien o queda todo horrible, hace que todo ht se mueva tantito a la izquierda
+    con base a un plano cartesiano
+    */
+}
+
+.ht img { /*Logo UNID*/
+    width: 100px;
+}
+
+h1 a{
+    color: #FFF2E0;
+    text-decoration: none;
+    font-size: 50px;
+    margin: 0; /*Elimina un margen que está establecido por defecto*/
+}
+
+h1 a:hover{
+    opacity: 70%;
+}
+
+header nav ul{
+    margin: 0;
+    margin-top: 10px;
+    list-style: none;
+    display: flex; /*Recuerden que el display va en el contenedor y no en los elementos de adentro*/
+    justify-content: center;
+    text-align: center;
+    gap: 10px; /*Añade una separación entre los elementos de este contenedor*/
+}
+
+header nav ul li{
+    padding: 10px; /*Le da un área/dominio a los li*/
+    border-radius: 15px;
+    background-color: #898AC4;
+    transform: translateY(-15px);
+    width: 100px; /*Decidan si lo ponemos a 100px de ancho o a 250px de ancho*/
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #FFF2E0;
+}
+
+header nav ul li:hover{
+    background-color: #C0C9EE;
+    cursor: pointer; /*Esto hace que el cursor se ponga en modo apuntado sin necesidad de tocar el vínculo*/
+}
