@@ -10,10 +10,6 @@
     />
     <meta name="generator" content="Astro v5.13.2" />
     <title>Metodologías Ágiles</title>
-    <script src="../js/color-modes.js"></script>
-    <link href="../css/bootstrap.min.css" rel="stylesheet" />
-    <link href="../css/carousel.css" rel="stylesheet" />
-    <link href="../css/style.css" rel="stylesheet" />
     <link
       rel="canonical"
       href="https://getbootstrap.com/docs/5.3/examples/carousel/"
@@ -21,6 +17,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous""></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
     <meta name="theme-color" content="#712cf9"/>
+    <link href="../css/style.css" rel="stylesheet" />
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -195,7 +192,7 @@
     <header data-bs-theme="dark">
       <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Metodologías ágiles</a>
+          <a class="navbar-brand" href="../index.html">Metodologías ágiles</a>
 
           <button
             class="navbar-toggler"
@@ -217,6 +214,7 @@
       </nav>
     </header>
     <main>
+      
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button
@@ -242,7 +240,7 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../img/carousel-3.jpeg" alt="" width="1600px">
+            <img src="../img/scrum1.jpg" alt="" width="1600px">
             <svg
               aria-hidden="true"
               class="bd-placeholder-img"
@@ -255,16 +253,16 @@
             </svg>
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Example headline.</h1>
-                <p class="opacity-75">
-                  Some representative placeholder content for the first slide of
-                  the carousel.
-                </p>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+              ¿Cuál es un dato curioso de Scrum?
+              </button>
+
+
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../img/carousel-2.jpeg" alt="" width="1000px" height="800px"> 
+            <img src="../img/XPimg4.jpg" alt="" width="1600px">
             <svg
               aria-hidden="true"
               class="bd-placeholder-img"
@@ -281,19 +279,15 @@
             </svg>
             <div class="container">
               <div class="carousel-caption">
-                <div class="significado-literal">
-                  <h1>Significado literal:</h1>
-                <p>
-                   La palabra "Kanban" (看板) es japonesa y significa "letrero" o "tarjeta visual".
-                </p>
-                </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+              ¿Qué dato curioso destaca en XP?
+              </button>
               </div>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="../img/carousel-1.jpeg" alt="" width="1600px">
+            <img src="../img/XPimg3.jpg" alt="" width="1600px">
 
-            <!---Nota borra esto y pega pa poner las imágenes y que no se rompa, primer cosa que puso sergio-->
             <svg
               aria-hidden="true"
               class="bd-placeholder-img"
@@ -310,16 +304,16 @@
             </svg>
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>One more for good measure.</h1>
-                <p>
-                  Some representative placeholder content for the third slide of
-                  this carousel.
-                </p>
-              </div>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+               ¿Cuál es el origen curioso del método Kanban?
+              </button>
+             
+            </div>
+
+
             </div>
           </div>
-        </div>
-        <button
+          <button
           class="carousel-control-prev"
           type="button"
           data-bs-target="#myCarousel"
@@ -337,7 +331,8 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+        </div>
+        <br><br><br>
       <!-- Marketing messaging and featurettes
   ================================================== -->
       <!-- Wrap the rest of the page in another container to center all the content. -->
@@ -346,43 +341,35 @@
 
         <div class="row">
           <div class="col-lg-4">
-            <img src="../img/scrum.jpeg" alt="" width="150px">
+            <img src="../img/scrum.png" alt="" width="150px">
             <br>
             <br>
             <h2 class="fw-normal">SCRUM</h2>
+            
             <p>
-              Some representative placeholder content for the three columns of
-              text below the carousel. This is the first column.
-            </p>
-            <p>
-              <a class="btn btn-primary" href="#">View details &raquo;</a>
+              <a class="btn btn-primary" href="#">Acerca de &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img src="../img/xp.jpeg" alt="" width="150px">
+            <img src="../img/xp.png" alt="" width="150px">
             <br>
             <br>
             <h2 class="fw-normal">XP</h2>
+          
             <p>
-              Another exciting bit of representative placeholder content. This
-              time, we've moved on to the second column.
-            </p>
-            <p>
-              <a class="btn btn-primary" href="#">View details &raquo;</a>
+              <a class="btn btn-primary" href="#">Acerca de &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
           <div class="col-lg-4">
-            <img src="../img/kanban.jpeg" alt="kanban" width="150px">
+            <img src="../img/kanban.png" alt="kanban" width="150px">
             <br>
             <br>
             <h2 class="fw-normal">KANBAN</h2>
+            
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt iusto est temporibus aspernatur ullam molestiae iure dolore soluta. Deseru
-            </p>
-            <p>
-              <a class="btn btn-primary" href="#">Ver detalles &raquo;</a>
+              <a class="btn btn-primary" href="#">Acerca de &raquo;</a>
             </p>
           </div>
           <!-- /.col-lg-4 -->
@@ -403,7 +390,7 @@
             </p>
           </div>
           <div class="col-md-5">
-            <div class="col-md-5">
+            <div class="col-md-5 ">
             <img
             style="display: flex; justify-content: center;"
               src="../img/carousel-2.jpeg"
@@ -609,7 +596,7 @@ Si usas una solución virtual de gestión del trabajo, también puedes agregar i
             style="display: flex; justify-content: center;"
               src="../img/Kanban-y-la-Gestion-del-Tiempo-Como-Hacer-Mas-con-Menos-Estres.png"
               alt=""
-              class="bd-placeholder-img bd-placeholder-img-lg featurette-image mx-auto"
+              class="bd-placeholder-img bd-placeholder-img-lg featurette-image  mx-auto"
               height="375"
               preserveAspectRatio="xMidYMid slice"
               role="img"
@@ -777,10 +764,62 @@ Si usas una solución virtual de gestión del trabajo, también puedes agregar i
           </li>
         </ul>
       </footer>
+      <!-- Modal -->
+<div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Scrum</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Sus reuniones diarias se llaman "Stand-ups" porque están diseñadas para ser breves y se celebran de pie para hacerlas más rápidas.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">XP</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       El nombre "extrema" proviene de llevar al extremo las buenas prácticas de desarrollo de software. Por ejemplo, si el diseño simple es bueno, se mantiene un diseño extremadamente simple.
+ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Kanban</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+ 
+Aunque se originó en la fábrica de Toyota, la idea de Kanban surgió cuando el ingeniero industrial Taiichi Ohno observó cómo funcionaban los supermercados estadounidenses.
+ 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
     </main>
-    <script
-      src="../js/bootstrap.bundle.min.js"
-      class="astro-vvvwv3sm"
-    ></script>
+    <script src="../js/color-modes.js"></script>
   </body>
 </html>

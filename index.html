@@ -198,7 +198,11 @@
     <!--Acá termina-->
 
     <main>
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+      <div
+        id="myCarousel"
+        class="carousel slide mb-6 sm-12"
+        data-bs-ride="carousel"
+      >
         <div class="carousel-indicators">
           <button
             type="button"
@@ -220,7 +224,7 @@
 
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="img/XPimg4.jpg" class="d-block w-100" />
+            <img src="img/XPimg2.jpg" class="d-block w-100" />
             <div class="container">
               <div class="carousel-caption text-start">
                 <h1>Extreme Programming</h1>
@@ -397,20 +401,26 @@
       </div>
 
       <footer class="container">
-        <hr>
+        <hr />
         <p class="float-end"><a href="#">Back to top</a></p>
         <ul class="list-unstyle list-inline">
           <li class="list-inline-item">
-             <a href="mailto:00900652@red.unid.mx">Victoria Isabella González Ponce</a>
+            <a href="mailto:00900652@red.unid.mx"
+              >Victoria Isabella González Ponce</a
+            >
           </li>
           <li class="list-inline-item">
-             <a href="mailto:00908009@red.unid.mx">José Moisés Rodriguez Aguilar</a>
+            <a href="mailto:00908009@red.unid.mx"
+              >José Moisés Rodriguez Aguilar</a
+            >
           </li>
           <li class="list-inline-item">
-             <a href="mailto:00899238@red.unid.mx">Braulio Andrey Coyoc Toraya</a>
+            <a href="mailto:00899238@red.unid.mx"
+              >Braulio Andrey Coyoc Toraya</a
+            >
           </li>
           <li class="list-inline-item">
-             <a href="mailto:00912159@red.unid.mx">Sergio Ricardo Leal García</a>
+            <a href="mailto:00912159@red.unid.mx">Sergio Ricardo Leal García</a>
           </li>
         </ul>
       </footer>
@@ -420,9 +430,11 @@
       var puntuación = localStorage.getItem("total");
       if (puntuación !== null) {
         if (puntuación == 0) {
-          document.getElementById("tp").innerHTML = "Obtuviste 0 puntos, verguenza me daría";
+          document.getElementById("tp").innerHTML =
+            "Obtuviste 0 puntos, verguenza me daría";
         } else {
-          document.getElementById("tp").innerHTML = "Tú puntuación actual es de: " + puntuación * 10 + " puntos.";
+          document.getElementById("tp").innerHTML =
+            "Tú puntuación actual es de: " + puntuación * 10 + " puntos.";
         }
         document.getElementById("pa").classList.remove("d-none");
 
@@ -433,22 +445,32 @@
 
         if (puntuación > pa && niq != 0 && niq != null) {
           localStorage.setItem("pa", puntuación);
-          document.getElementById("pa").innerHTML = "¡Felicidades! Superaste la puntuación más alta.";
+          document.getElementById("pa").innerHTML =
+            "¡Felicidades! Superaste la puntuación más alta.";
         } else if (puntuación == pa) {
-          document.getElementById("pa").innerHTML = "Poco más y quedas en primer lugar eh.";
+          document.getElementById("pa").innerHTML =
+            "Poco más y quedas en primer lugar eh.";
         } else if (puntuación < pa) {
-          document.getElementById("pa").innerHTML = "Puntuación más alta: " + (pa*10) + " puntos";
+          document.getElementById("pa").innerHTML =
+            "Puntuación más alta: " + pa * 10 + " puntos";
         } else {
           var niq = localStorage.getItem("niq");
-          var niq = niq + 1
+          var niq = niq + 1;
           localStorage.setItem("niq", niq);
           localStorage.setItem("pa", puntuación);
-          document.getElementById("pa").innerHTML = "Acabas de establecer la primer puntuación más alta";
+          document.getElementById("pa").innerHTML =
+            "Acabas de establecer la primer puntuación más alta";
         }
-
       } else {
-        document.getElementById("tp").innerHTML = "Aún no has hecho el quiz, cuando termines podrás ver tu puntuación.";
+        document.getElementById("tp").innerHTML =
+          "Aún no has hecho el quiz, cuando termines podrás ver tu puntuación.";
       }
     </script>
+    <style>
+      .carousel-caption h1,
+      .carousel-caption p {
+        color: #000000 !important;
+      }
+    </style>
   </body>
 </html>
